@@ -736,9 +736,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0959f05122bac784f8391db349ec94b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
-  levelPrefab: {fileID: 3643979140847239603, guid: aca0791db6ee4fa4a957f8f2d920f660, type: 3}
+  startedLevelPrefab: {fileID: 5051732811093397994, guid: cf8270a90b8cb174a98b3f9f32fd15e8, type: 3}
+  levelPrefab: {fileID: 5418924021496058410, guid: 7f53a06e727a98e46a4d04fdba93099b, type: 3}
   levelsIconsPanel: {fileID: 874087222}
-  levelCount: 12
+  levelCount: 24
+  lockedLevels: 12
 --- !u!1 &965710945
 GameObject:
   m_ObjectHideFlags: 0

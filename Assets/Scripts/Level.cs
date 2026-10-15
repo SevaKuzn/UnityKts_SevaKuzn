@@ -4,30 +4,56 @@ using TMPro;
 
 public class Level : MonoBehaviour
 {
+    [SerializeField] Button btnShape;
     [SerializeField] TextMeshProUGUI levelText;
     [SerializeField] Image InactiveStarOne;
     [SerializeField] Image InactiveStarTwo;
     [SerializeField] Image InactiveStarThree;
-    [SerializeField] Image lockedLevel;
-    //Random rand = new Random();
+    [SerializeField] GameObject lockedLevel;
+    [SerializeField] GameObject starsLayout;
+    public int lockedCount = 1;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Init(int levelNumber, int randomStars, int lockedLevels, int levelCount)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void Init(int levelNumber)
-    {
-        //int randStars = rand.Next(0, 3);
-        levelText.text = levelNumber.ToString();
-        InactiveStarThree.enabled = false;
-        //Debug.Log(randStars);
+        if (lockedCount < lockedLevels)
+        {
+            starsLayout.SetActive(true);
+            btnShape.interactable = true;
+            lockedLevel.SetActive(false);
+            levelText.text = levelNumber.ToString();
+            if (randomStars == 3)
+            {
+                InactiveStarOne.enabled = false;
+                InactiveStarTwo.enabled = false;
+                InactiveStarThree.enabled = false;
+            }
+            if (randomStars == 2)
+            {
+                InactiveStarOne.enabled = false;
+                InactiveStarTwo.enabled = false;
+            }
+            if (randomStars == 1)
+            {
+                InactiveStarOne.enabled = false;
+            }
+            if (randomStars == 0)
+            {
+                InactiveStarOne.enabled = true;
+                InactiveStarTwo.enabled = true;
+                InactiveStarThree.enabled = true;
+            }
+            lockedCount+=1;
+        }
+        else if (lockedCount >= lockedLevels) 
+        {
+            btnShape.interactable = false;
+            lockedLevel.SetActive(true);
+            starsLayout.SetActive(false);
+            lockedCount += 1;
+        }
+        if (levelCount == lockedCount)
+        {
+            lockedCount = 1;
+        }
     }
 }
