@@ -211,6 +211,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &77204739 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4987955451084416053, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 714970942}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!224 &129309731 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6597831565664931919, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
@@ -293,6 +304,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395306264}
   m_CullTransparentMesh: 1
+--- !u!114 &423789832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 955149709218987576, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 714970942}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &431435789 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6597831565664931919, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
@@ -390,7 +412,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.45
+  m_fontSize: 34.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -656,7 +678,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.25
+  m_fontSize: 28.2
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -733,11 +755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_text
-      value: "\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435"
+      value: "\u0447\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
       objectReference: {fileID: 0}
     - target: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_fontSize
-      value: 22.5
+      value: 21.7
       objectReference: {fileID: 0}
     - target: {fileID: 6597831565664931919, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_Pivot.x
@@ -1013,17 +1035,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 626647387}
     m_Modifications:
+    - target: {fileID: 955149709218987576, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+      propertyPath: m_text
+      value: "\u0446\u0435\u043D\u0430: 200"
+      objectReference: {fileID: 0}
+    - target: {fileID: 955149709218987576, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+      propertyPath: m_fontSize
+      value: 19.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2128620810294872141, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_Name
       value: ProtuctRow (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_text
-      value: "\u0447\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
+      value: "\u0431\u0438\u0433 \u0445\u0438\u0442"
       objectReference: {fileID: 0}
     - target: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_fontSize
-      value: 21.7
+      value: 22.5
       objectReference: {fileID: 0}
     - target: {fileID: 6597831565664931919, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_Pivot.x
@@ -1110,10 +1140,43 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+--- !u!114 &860996680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 595906146}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1000357324 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4987955451084416053, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 595906146}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!114 &1021387810 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
   m_PrefabInstance: {fileID: 2829648930263296677}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1023167953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 955149709218987576, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 1969690272}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -1337,8 +1400,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00074768, y: -26.5}
-  m_SizeDelta: {x: 271.73, y: 585}
+  m_AnchoredPosition: {x: -0.0008, y: -24.3851}
+  m_SizeDelta: {x: 244.1346, y: 456.2298}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384545672
 MonoBehaviour:
@@ -1357,17 +1420,61 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_Spacing: {x: 10, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1384755218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 955149709218987576, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 595906146}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &1434605980 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 955149709218987576, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
   m_PrefabInstance: {fileID: 2829648930263296677}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1444412150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 1969690272}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1603058616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4987955451084416053, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 1969690272}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &1709235816 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+  m_PrefabInstance: {fileID: 714970942}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -1421,6 +1528,21 @@ MonoBehaviour:
     nameText: {fileID: 1021387810}
     priceText: {fileID: 1434605980}
     buyButton: {fileID: 1777794602}
+  - name: "\u0447\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
+    price: 100
+    nameText: {fileID: 860996680}
+    priceText: {fileID: 1384755218}
+    buyButton: {fileID: 1000357324}
+  - name: "\u0431\u0438\u0433 \u0445\u0438\u0442"
+    price: 200
+    nameText: {fileID: 1444412150}
+    priceText: {fileID: 1023167953}
+    buyButton: {fileID: 1603058616}
+  - name: "\u0431\u0438\u0433 \u0445\u0438\u0442"
+    price: 200
+    nameText: {fileID: 1709235816}
+    priceText: {fileID: 423789832}
+    buyButton: {fileID: 77204739}
   cartContent: {fileID: 1384545671}
   cartTotalText: {fileID: 484369892}
   cartItemPrefab: {fileID: 7738773560031981347, guid: 1cbdb14a018ad514daeb221f0b539b30, type: 3}
@@ -1448,17 +1570,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 626647387}
     m_Modifications:
+    - target: {fileID: 955149709218987576, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+      propertyPath: m_text
+      value: "\u0446\u0435\u043D\u0430: 200"
+      objectReference: {fileID: 0}
+    - target: {fileID: 955149709218987576, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
+      propertyPath: m_fontSize
+      value: 19.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2128620810294872141, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_Name
       value: ProtuctRow (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_text
-      value: "\u0447\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
+      value: "\u0431\u0438\u0433 \u0445\u0438\u0442\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_fontSize
-      value: 21.7
+      value: 22.5
       objectReference: {fileID: 0}
     - target: {fileID: 6597831565664931919, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_Pivot.x
@@ -1680,11 +1810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_text
-      value: "\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435"
+      value: "\u0447\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
       objectReference: {fileID: 0}
     - target: {fileID: 5440599369575281957, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_fontSize
-      value: 22.5
+      value: 21.7
       objectReference: {fileID: 0}
     - target: {fileID: 6597831565664931919, guid: cbc06bc0d7d760042bfa1c3d420a97ef, type: 3}
       propertyPath: m_Pivot.x

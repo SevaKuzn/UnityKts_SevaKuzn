@@ -88,7 +88,7 @@ public class ShopManager : MonoBehaviour
             Debug.Log(item.name + ": " + item.price);
         }
 
-        cartTotalText.text = "Сумма: " + total.ToString("F2");
+        cartTotalText.text = "Сумма: " + total.ToString("F1");
     }
 
     float CalculateTotal()
