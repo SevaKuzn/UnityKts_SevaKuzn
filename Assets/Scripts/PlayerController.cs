@@ -1,9 +1,15 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerController : MonoBehaviour
 {
+    public float hp = 100f;
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
+
+    [SerializeField] TextMeshProUGUI hpText;
 
     private Rigidbody2D rb;
     private bool isGrounded = false;
@@ -15,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        hpText.text = $"hp: {hp}";
+
         float move = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(move * moveSpeed, rb.linearVelocity.y);
 
@@ -22,6 +30,18 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+
+
+        if (hp  <= 0f)
+        {
+            RestartScene();
+        }
+    }
+
+    private void RestartScene()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
