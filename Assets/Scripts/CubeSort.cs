@@ -32,7 +32,7 @@ public class CubeSort : MonoBehaviour
                 float sizeA = cubes[j].transform.localScale.x;
                 float sizeB = cubes[j + 1].transform.localScale.x;
 
-            if (sizeA > sizeB)
+            if (sizeA < sizeB)
                 {
                     GameObject a = cubes[j];
                     cubes[j] = cubes[j + 1];
